@@ -4,11 +4,11 @@
     <meta charset="utf-8" />
     <title>Q3 Earnings Report</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
     <meta name="author" content="25ds1000058@ds.study.iitm.ac.in" />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css" />
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css" />
   </head>
 
@@ -18,31 +18,27 @@
         
         <section>
           <h1>Q3 Earnings Report</h1>
-          <h3>Financial Institution</h3>
           <p>Presented by: Technical Consultant</p>
           <p>Email: 25ds1000058@ds.study.iitm.ac.in</p>
-          
           <aside class="notes">
-            Introductory remarks regarding Q3 performance.
+            Welcome everyone. Today we will review the Q3 financials and our technical roadmap.
           </aside>
         </section>
 
         <section data-markdown>
           <textarea data-template>
             ## Executive Summary
-
-            We have exceeded quarterly expectations.
+            
+            Key performance indicators show strong growth.
+            
+            ```python
+            # Markdown Code Block
+            def get_status():
+                return "On Track"
+            ```
 
             - **Revenue:** +18% YoY
-            - **Consultant:** 25ds1000058@ds.study.iitm.ac.in
-            
-            ---
-            
-            ## Key Drivers
-            
-            1. Digital Transformation
-            2. AI Integration
-            3. Market Expansion
+            - **Contact:** 25ds1000058@ds.study.iitm.ac.in
           </textarea>
         </section>
 
@@ -57,22 +53,25 @@
 
         <section>
           <h2>Risk Analysis Model</h2>
-          <pre><code class="python" data-line-numbers>
-def calculate_growth(current, previous):
-    """
-    Calculate year-over-year growth
-    """
-    return (current - previous) / previous
+          <pre><code class="language-python" data-trim data-line-numbers>
+import numpy as np
 
-growth = calculate_growth(5.2, 4.4)
-print(f"Growth: {growth:.2%}")
+def calculate_risk(exposure, probability):
+    """
+    Calculate risk factor
+    """
+    return exposure * probability
+
+# Financial formula implementation
+risk = calculate_risk(1000000, 0.05)
+print(f"Risk Exposure: ${risk}")
           </code></pre>
         </section>
 
         <section>
-          <h2>Financial Formula</h2>
-          <p>Standard Capital Adequacy Calculation:</p>
-          \[ \text{CAR} = \frac{\text{Tier 1} + \text{Tier 2}}{\text{Risk Weighted Assets}} \]
+          <h2>Capital Adequacy Formula</h2>
+          <p>Standard Basel III Calculation:</p>
+          \[ \text{CAR} = \frac{\text{Tier 1 Capital} + \text{Tier 2 Capital}}{\text{Risk Weighted Assets}} \]
         </section>
 
       </div>
@@ -89,6 +88,8 @@ print(f"Growth: {growth:.2%}")
         controls: true,
         progress: true,
         history: true,
+        center: true,
+        // Initialize all plugins including Highlight
         plugins: [RevealMarkdown, RevealHighlight, RevealMath, RevealNotes]
       });
     </script>
