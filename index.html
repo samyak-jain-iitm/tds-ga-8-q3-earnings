@@ -1,97 +1,276 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Q3 Earnings Report</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="25ds1000058@ds.study.iitm.ac.in" />
+<head>
+  <meta charset="utf-8">
+  <title>Q3 Earnings Report – Interactive RevealJS Deck</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css" />
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css" />
-  </head>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+  />
 
-  <body>
-    <div class="reveal">
-      <div class="slides">
-        
-        <section>
-          <h1>Q3 Earnings Report</h1>
-          <p>Presented by: Technical Consultant</p>
-          <p>Email: 25ds1000058@ds.study.iitm.ac.in</p>
-          <aside class="notes">
-            Welcome everyone. Today we will review the Q3 financials and our technical roadmap.
-          </aside>
-        </section>
+  <!-- Core Reveal.js styles -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/reset.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/reveal.min.css"
+  />
 
-        <section data-markdown>
-          <textarea data-template>
-            ## Executive Summary
-            
-            Key performance indicators show strong growth.
-            
-            ```python
-            # Markdown Code Block
-            def get_status():
-                return "On Track"
-            ```
+  <!-- Theme (pick one: beige, black, blood, league, moon, night, serif, simple, sky, solarized, white...) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/theme/league.min.css"
+    id="theme"
+  />
 
-            - **Revenue:** +18% YoY
-            - **Contact:** 25ds1000058@ds.study.iitm.ac.in
-          </textarea>
-        </section>
+  <!-- Syntax highlighting theme for code blocks -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/highlight/monokai.min.css"
+  />
 
-        <section>
-          <h2>Growth Sectors</h2>
-          <ul>
-            <li class="fragment">Retail Banking</li>
-            <li class="fragment">Wealth Management</li>
-            <li class="fragment">FinTech Partnerships</li>
-          </ul>
-        </section>
+  <style>
+    /* Optional small visual tweaks */
+    .reveal h1,
+    .reveal h2 {
+      letter-spacing: 0.03em;
+    }
 
-        <section>
-          <h2>Risk Analysis Model</h2>
-          <pre><code class="language-python" data-trim data-line-numbers>
+    .reveal .tagline {
+      margin-top: 0.5em;
+      font-size: 0.7em;
+      opacity: 0.8;
+    }
+
+    .reveal .email {
+      font-size: 0.6em;
+      margin-top: 1.2em;
+    }
+
+    .reveal .kpi {
+      font-size: 1.1em;
+    }
+
+    .reveal small {
+      font-size: 0.6em;
+    }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- Title slide (with email + speaker notes) -->
+      <section data-transition="fade">
+        <h1>Q3 Earnings Report</h1>
+        <h3>Major Financial Institution</h3>
+        <p class="tagline">Interactive Technical Review for Stakeholders</p>
+
+        <p class="email">
+          Contact:
+          <a href="mailto:25ds1000058@ds.study.iitm.ac.in">
+            25ds1000058@ds.study.iitm.ac.in
+          </a>
+        </p>
+
+        <aside class="notes">
+          Welcome everyone. This deck demonstrates our Q3 results and also
+          showcases a modern, interactive presentation built with RevealJS.
+          <br /><br />
+          Mention that this can be version-controlled, automated, and published
+          directly from GitHub Pages as part of our reporting pipeline.
+        </aside>
+      </section>
+
+      <!-- A slide written in Markdown -->
+      <section data-markdown>
+        <textarea data-template>
+## Agenda
+
+- Macro & market context
+- Revenue performance by segment
+- Cost efficiency & operating leverage
+- Capital, liquidity & risk
+- Technology & analytics highlights
+- Outlook and next steps
+
+---
+
+### Navigation
+
+- Use <kbd>→</kbd> / <kbd>←</kbd> to move between slides  
+- Use <kbd>↓</kbd> / <kbd>↑</kbd> for nested details  
+- Press <kbd>S</kbd> to open **speaker notes** (in a separate window)
+        </textarea>
+      </section>
+
+      <!-- KPI highlights with fragments -->
+      <section>
+        <h2>Headline KPIs</h2>
+
+        <ul>
+          <li class="fragment fade-in kpi">
+            Net Income: <strong>₹ 3,250 Cr</strong> <span>(+12% YoY)</span>
+          </li>
+          <li class="fragment fade-in kpi">
+            Return on Equity (ROE): <strong>16.4%</strong>
+          </li>
+          <li class="fragment fade-in kpi">
+            Cost-to-Income Ratio: <strong>46.8%</strong>
+          </li>
+          <li class="fragment fade-in kpi">
+            CET1 Ratio: <strong>14.3%</strong> (well above regulatory minimum)
+          </li>
+        </ul>
+
+        <aside class="notes">
+          Walk through each KPI as it appears.
+          <br /><br />
+          Emphasize: (1) strong profitability, (2) disciplined cost management,
+          and (3) robust capital buffers that support growth and stress scenarios.
+        </aside>
+      </section>
+
+      <!-- Financial math / formulas -->
+      <section>
+        <h2>Key Valuation Metrics</h2>
+
+        <p>We use standard discounted cash-flow techniques:</p>
+
+        <p class="fragment">
+          Net Present Value (NPV):
+          <br />
+          \[
+            \text{NPV}
+            = \sum_{t=1}^{T} \frac{CF_t}{(1 + r)^t}
+          \]
+        </p>
+
+        <p class="fragment">
+          Economic Value Added (EVA):
+          <br />
+          \[
+            \text{EVA}
+            = \text{NOPAT} - (\text{WACC} \times \text{Capital Employed})
+          \]
+        </p>
+
+        <p class="fragment">
+          Internal Rate of Return (IRR) solves:
+          <br />
+          \[
+            0 = \sum_{t=0}^{T} \frac{CF_t}{(1 + \text{IRR})^t}
+          \]
+        </p>
+
+        <aside class="notes">
+          Briefly recap each formula, linking to how we use them in our internal
+          valuation and project approval frameworks.
+          <br /><br />
+          Optionally, connect NPV and EVA to regulatory capital and risk-adjusted
+          performance metrics used by the bank.
+        </aside>
+      </section>
+
+      <!-- Code slide with syntax highlighting -->
+      <section>
+        <h2>Code Sample: NPV Sensitivity (Python)</h2>
+        <p><small>Automating portfolio-level valuation scenarios</small></p>
+
+        <pre><code class="language-python">
 import numpy as np
 
-def calculate_risk(exposure, probability):
-    """
-    Calculate risk factor
-    """
-    return exposure * probability
+cash_flows = np.array([120, 150, 180, 220])  # in ₹ Cr
+discount_rates = [0.08, 0.10, 0.12]          # 8%, 10%, 12%
 
-# Financial formula implementation
-risk = calculate_risk(1000000, 0.05)
-print(f"Risk Exposure: ${risk}")
-          </code></pre>
-        </section>
+def npv(rate, cfs):
+    """Simple NPV calculator."""
+    periods = np.arange(1, len(cfs) + 1)
+    return np.sum(cfs / (1 + rate) ** periods)
 
-        <section>
-          <h2>Capital Adequacy Formula</h2>
-          <p>Standard Basel III Calculation:</p>
-          \[ \text{CAR} = \frac{\text{Tier 1 Capital} + \text{Tier 2 Capital}}{\text{Risk Weighted Assets}} \]
-        </section>
+for r in discount_rates:
+    value = npv(r, cash_flows)
+    print(f"r = {r:.0%}  ->  NPV = ₹{value:,.2f} Cr")
+        </code></pre>
 
-      </div>
+        <aside class="notes">
+          Explain that our risk and treasury teams can embed logic like this
+          in notebooks or services, and the results can be exported directly
+          into this presentation.
+          <br /><br />
+          Point out that syntax highlighting improves readability for
+          technical stakeholders.
+        </aside>
+      </section>
+
+      <!-- Slide showing more fragments and closing -->
+      <section data-transition="slide">
+        <h2>Next Steps</h2>
+
+        <ol>
+          <li class="fragment fade-in">
+            Align FY targets with updated macro assumptions
+          </li>
+          <li class="fragment fade-in">
+            Prioritize capex based on NPV / EVA ranking
+          </li>
+          <li class="fragment fade-in">
+            Tighten cost baseline in non-critical portfolios
+          </li>
+          <li class="fragment fade-in">
+            Continue automation of quarterly reporting via GitHub + CI/CD
+          </li>
+        </ol>
+
+        <p class="fragment">
+          <small>
+            Questions? Reach out at
+            <a href="mailto:25ds1000058@ds.study.iitm.ac.in">
+              25ds1000058@ds.study.iitm.ac.in
+            </a>
+          </small>
+        </p>
+
+        <aside class="notes">
+          Close by emphasizing the data pipeline and automation angle plus the
+          governance benefits of having version-controlled, reproducible
+          presentations.
+        </aside>
+      </section>
     </div>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
+  <!-- Reveal.js core -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/reveal.min.js"></script>
 
-    <script>
-      Reveal.initialize({
-        controls: true,
-        progress: true,
-        history: true,
-        center: true,
-        // Initialize all plugins including Highlight
-        plugins: [RevealMarkdown, RevealHighlight, RevealMath, RevealNotes]
-      });
-    </script>
-  </body>
+  <!-- Plugins -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/markdown/markdown.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/highlight/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/notes/notes.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/math/math.min.js"></script>
+
+  <script>
+    // Initialize RevealJS
+    Reveal.initialize({
+      hash: true,           // Allow direct linking to slides
+      slideNumber: true,    // Show slide numbers
+      transition: 'slide',  // Slide transition style
+
+      // Math plugin configuration (KaTeX variant)
+      math: {
+        // Default config is fine for standard LaTeX expressions
+      },
+
+      plugins: [
+        RevealMarkdown,
+        RevealHighlight,
+        RevealNotes,
+        RevealMath.KaTeX
+      ]
+    });
+  </script>
+</body>
 </html>
