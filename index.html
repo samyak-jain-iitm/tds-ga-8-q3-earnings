@@ -19,7 +19,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/reveal.min.css"
   />
 
-  <!-- Theme (pick one: beige, black, blood, league, moon, night, serif, simple, sky, solarized, white...) -->
+  <!-- Theme -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/theme/league.min.css"
@@ -33,7 +33,6 @@
   />
 
   <style>
-    /* Optional small visual tweaks */
     .reveal h1,
     .reveal h2 {
       letter-spacing: 0.03em;
@@ -180,7 +179,8 @@
         <h2>Code Sample: NPV Sensitivity (Python)</h2>
         <p><small>Automating portfolio-level valuation scenarios</small></p>
 
-        <pre><code class="language-python">
+        <!-- NOTE: 'hljs' + 'language-python' is important for syntax highlighting -->
+        <pre><code class="hljs language-python" data-trim>
 import numpy as np
 
 cash_flows = np.array([120, 150, 180, 220])  # in ₹ Cr
@@ -259,9 +259,8 @@ for r in discount_rates:
       slideNumber: true,    // Show slide numbers
       transition: 'slide',  // Slide transition style
 
-      // Math plugin configuration (KaTeX variant)
       math: {
-        // Default config is fine for standard LaTeX expressions
+        // Default KaTeX config is enough for standard LaTeX
       },
 
       plugins: [
