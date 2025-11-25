@@ -2,226 +2,94 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Q3 Earnings Report - Financial Institution</title>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
+    <title>Q3 Earnings Report</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta name="author" content="25ds1000058@ds.study.iitm.ac.in" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css"
-    />
-
-    <style>
-      :root {
-        /* Responsive font size */
-        --r-main-font-size: calc(0.5vw + 0.5vh + 0.5vmin);
-      }
-      .footer-contact {
-        position: absolute;
-        bottom: 20px;
-        left: 30px;
-        font-size: 0.5em; /* Smaller font for the footer */
-        color: #777; /* Subtle color */
-      }
-    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css" />
   </head>
 
   <body>
     <div class="reveal">
       <div class="slides">
+        
         <section>
-          <h2>🏦 Q3 Earnings Report</h2>
-          <br />
-          <h1>**Driving Sustainable Growth**</h1>
-          <br />
-          <p>
-            **Presented by:** 25ds1000058@ds.study.iitm.ac.in
-            <br />
-            <span class="footer-contact"
-              >Contact: 25ds1000058@ds.study.iitm.ac.in</span
-            >
-          </p>
+          <h1>Q3 Earnings Report</h1>
+          <h3>Financial Institution</h3>
+          <p>Presented by: Technical Consultant</p>
+          <p>Email: 25ds1000058@ds.study.iitm.ac.in</p>
+          
           <aside class="notes">
-            Welcome the stakeholders and introduce the focus of the report:
-            sustainable, strategic growth driven by our technology investments.
+            Introductory remarks regarding Q3 performance.
           </aside>
         </section>
 
         <section data-markdown>
           <textarea data-template>
-            ## 📈 Q3 Financial Highlights
+            ## Executive Summary
 
-            * **Net Income:** $5.2 Billion (an **18% increase** YoY)
-            * **Total Assets:** $980 Billion (approaching the **$1 Trillion** milestone)
-            * **Key Investments:** $\text{AI-driven Risk Models}$ & $\text{Cloud Infrastructure}$
-            * **Efficiency Ratio:** Improved from $62\%$ to **$58\%$**
+            We have exceeded quarterly expectations.
 
+            - **Revenue:** +18% YoY
+            - **Consultant:** 25ds1000058@ds.study.iitm.ac.in
+            
             ---
-
-            ## 💡 Strategic Focus Areas
-
-            1.  **Digital Transformation** $\text{(Core focus on customer experience)}$
-            2.  **Regulatory Compliance** $\text{(Automated reporting and audit trails)}$
-            3.  **Cybersecurity** $\text{(Enhancing zero-trust architecture)}$
-
-            _Source: Internal Financial Reporting Systems_
+            
+            ## Key Drivers
+            
+            1. Digital Transformation
+            2. AI Integration
+            3. Market Expansion
           </textarea>
         </section>
 
         <section>
-          <h2>📊 Revenue Growth Breakdown</h2>
-          <p>Key drivers behind the 18% Net Income increase:</p>
+          <h2>Growth Sectors</h2>
           <ul>
-            <li class="fragment fade-in">
-              **Retail Banking:** $\text{New mortgage product adoption}$
-            </li>
-            <li class="fragment fade-in">
-              **Wealth Management:** $\text{Successful expansion into APAC markets}$
-            </li>
-            <li class="fragment fade-in current-visible">
-              **Investment Banking:** $\text{Strong M\&A advisory fees}$
-            </li>
+            <li class="fragment">Retail Banking</li>
+            <li class="fragment">Wealth Management</li>
+            <li class="fragment">FinTech Partnerships</li>
           </ul>
-          <p class="fragment highlight-red">
-            **Next Step:** $\text{Maintain momentum through Q4 product launches.}$
-          </p>
-          <aside class="notes">
-            Start with Retail, then Wealth Management. Pause after Investment
-            Banking for questions. Conclude by emphasizing the Q4 roadmap.
-          </aside>
         </section>
 
         <section>
-          <h2>💻 Modernizing Risk: The VaR Model</h2>
-          <p>
-            Using Python and our internal $\text{RiskEngine}$ for more accurate
-            Value at Risk ($\text{VaR}$) calculations.
-          </p>
-          <pre>
-            <code class="python" data-line-numbers="1-2|4-5|7-9">
-import numpy as np
-from risk_engine import calculate_var
+          <h2>Risk Analysis Model</h2>
+          <pre><code class="python" data-line-numbers>
+def calculate_growth(current, previous):
+    """
+    Calculate year-over-year growth
+    """
+    return (current - previous) / previous
 
-# Historical returns data (simulated)
-returns = np.random.normal(0.0001, 0.01, 1000)
-
-# Calculate 99% VaR over a 1-day horizon
-confidence_level = 0.99
-horizon_days = 1
-var_value = calculate_var(returns, confidence_level, horizon_days)
-
-print(f"1-Day 99% VaR: {var_value * 100:.2f}%")
-            </code>
-          </pre>
-          <aside class="notes">
-            The code highlights our shift to transparent, internally-developed
-            risk models, moving away from black-box vendor solutions, which
-            improves governance.
-          </aside>
+growth = calculate_growth(5.2, 4.4)
+print(f"Growth: {growth:.2%}")
+          </code></pre>
         </section>
 
         <section>
-          <h2>📐 Regulatory Focus: Capital Adequacy</h2>
-          <p>
-            We maintain strict compliance with Basel III, ensuring our
-            **Capital Adequacy Ratio (CAR)** remains above regulatory minimums.
-          </p>
-          <br />
-          $$
-          \text{Capital Adequacy Ratio (CAR)} = \frac{\text{Tier 1 Capital} + \text{Tier 2 Capital}}{\text{Risk-Weighted Assets (RWA)}}
-          $$
-          <br />
-          <p class="fragment fade-in">
-            **Current Q3 CAR:** $\mathbf{14.5\%}$ ($\text{Regulatory Minimum: } 10.5\%$)
-          </p>
-          
-          <aside class="notes">
-            This formula is central to our stability. Our 14.5% CAR reflects a
-            strong capital buffer, well above the required minimum.
-          </aside>
+          <h2>Financial Formula</h2>
+          <p>Standard Capital Adequacy Calculation:</p>
+          \[ \text{CAR} = \frac{\text{Tier 1} + \text{Tier 2}}{\text{Risk Weighted Assets}} \]
         </section>
 
-        <section>
-          <h2>🤝 Q&A and Outlook</h2>
-          <p>
-            **Thank you.** We look forward to continuing this strategic partnership.
-          </p>
-          <br />
-          <p>
-            **Q4 Outlook:** $\text{Focus on AI deployment and operational efficiency.}$
-          </p>
-          <br />
-          <p class="r-fit-text">
-            **Technical Consultant:**
-            <a href="mailto:25ds1000058@ds.study.iitm.ac.in"
-              >25ds1000058@ds.study.iitm.ac.in</a
-            >
-          </p>
-        </section>
       </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
 
     <script>
-      // Initialize RevealJS with Configuration
       Reveal.initialize({
-        // Display
-        width: 1280,
-        height: 720,
-        margin: 0.05,
-        minScale: 0.2,
-        maxScale: 1.5,
-
-        // Navigation
         controls: true,
         progress: true,
         history: true,
-        center: true,
-
-        // Presentation Features
-        transition: "slide", // default/slide/convex/concave/zoom
-
-        // Plugins used
-        plugins: [
-          RevealMarkdown,
-          RevealHighlight,
-          RevealMath,
-          RevealNotes,
-        ],
-
-        // MathJax/KaTeX configuration for the Math plugin
-        math: {
-          mathjax:
-            "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js",
-          config: "tex-mml-chtml",
-          // The following is important for LaTeX display mode:
-          tex: {
-            inlineMath: [
-              ["$", "$"],
-              ["\\(", "\\)"],
-            ],
-            displayMath: [
-              ["$$", "$$"],
-              ["\\[", "\\]"],
-            ],
-          },
-        },
+        plugins: [RevealMarkdown, RevealHighlight, RevealMath, RevealNotes]
       });
     </script>
   </body>
