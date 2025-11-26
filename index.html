@@ -1,186 +1,190 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Q3 Earnings Report – Interactive RevealJS Deck</title>
+  <head>
+    <meta charset="utf-8" />
+    <title>Quarterly Earnings Report – RevealJS</title>
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-  />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
 
-  <!-- Core Reveal.js styles -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/reset.min.css"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/reveal.min.css"
-  />
+    <!-- RevealJS core CSS (from tutorial: CDN, version 4.5.0) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css"
+      id="theme"
+    />
 
-  <!-- Theme -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/theme/league.min.css"
-    id="theme"
-  />
+    <!-- Syntax highlighting theme for code blocks -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css"
+    />
 
-  <!-- Syntax highlighting theme for code blocks -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/highlight/monokai.min.css"
-  />
+    <style>
+      /* Custom theme tweaks (as per "Themes and Styling" section) */
+      .reveal {
+        font-family: "Arial", sans-serif;
+      }
 
-  <style>
-    .reveal h1,
-    .reveal h2 {
-      letter-spacing: 0.03em;
-    }
+      .reveal h1,
+      .reveal h2 {
+        letter-spacing: 0.03em;
+      }
 
-    .reveal .tagline {
-      margin-top: 0.5em;
-      font-size: 0.7em;
-      opacity: 0.8;
-    }
+      .reveal .tagline {
+        font-size: 0.7em;
+        opacity: 0.8;
+        margin-top: 0.5em;
+      }
 
-    .reveal .email {
-      font-size: 0.6em;
-      margin-top: 1.2em;
-    }
+      .reveal .email {
+        font-size: 0.6em;
+        margin-top: 1.2em;
+      }
 
-    .reveal .kpi {
-      font-size: 1.1em;
-    }
+      .kpi-list li {
+        margin: 0.4em 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- Title slide with email + speaker notes -->
+        <section>
+          <h1>Quarterly Earnings Report</h1>
+          <h3>Major Financial Institution</h3>
+          <p class="tagline">
+            Interactive RevealJS Presentation for Stakeholders
+          </p>
 
-    .reveal small {
-      font-size: 0.6em;
-    }
-  </style>
-</head>
-<body>
-  <div class="reveal">
-    <div class="slides">
+          <p class="email">
+            Technical Consultant:
+            <a href="mailto:25ds1000058@ds.study.iitm.ac.in">
+              25ds1000058@ds.study.iitm.ac.in
+            </a>
+          </p>
 
-      <!-- Title slide (with email + speaker notes) -->
-      <section data-transition="fade">
-        <h1>Q3 Earnings Report</h1>
-        <h3>Major Financial Institution</h3>
-        <p class="tagline">Interactive Technical Review for Stakeholders</p>
+          <aside class="notes">
+            Welcome stakeholders. Introduce yourself as the technical consultant
+            responsible for this interactive, web-based quarterly earnings
+            report built with RevealJS.
+            <br /><br />
+            Mention that this deck is hosted on GitHub Pages, making it easy to
+            version-control, review, and reuse for each quarter.
+          </aside>
+        </section>
 
-        <p class="email">
-          Contact:
-          <a href="mailto:25ds1000058@ds.study.iitm.ac.in">
-            25ds1000058@ds.study.iitm.ac.in
-          </a>
-        </p>
-
-        <aside class="notes">
-          Welcome everyone. This deck demonstrates our Q3 results and also
-          showcases a modern, interactive presentation built with RevealJS.
-          <br /><br />
-          Mention that this can be version-controlled, automated, and published
-          directly from GitHub Pages as part of our reporting pipeline.
-        </aside>
-      </section>
-
-      <!-- A slide written in Markdown -->
-      <section data-markdown>
-        <textarea data-template>
+        <!-- Markdown slide (from "Markdown Support" methodology) -->
+        <section data-markdown>
+          <textarea data-template>
 ## Agenda
 
 - Macro & market context
-- Revenue performance by segment
+- Segment-wise revenue performance
 - Cost efficiency & operating leverage
-- Capital, liquidity & risk
-- Technology & analytics highlights
+- Capital, liquidity & risk metrics
+- Technology & analytics initiatives
 - Outlook and next steps
 
 ---
 
-### Navigation
+### How to Use This Deck
 
-- Use <kbd>→</kbd> / <kbd>←</kbd> to move between slides  
-- Use <kbd>↓</kbd> / <kbd>↑</kbd> for nested details  
-- Press <kbd>S</kbd> to open **speaker notes** (in a separate window)
-        </textarea>
-      </section>
+- Use <kbd>→</kbd> / <kbd>←</kbd> to move between **sections**
+- Use <kbd>↓</kbd> / <kbd>↑</kbd> for **nested details**
+- Press <kbd>S</kbd> to open **speaker notes** in a new window
+- Press <kbd>?</kbd> to see **RevealJS shortcuts**
+          </textarea>
+        </section>
 
-      <!-- KPI highlights with fragments -->
-      <section>
-        <h2>Headline KPIs</h2>
+        <!-- Fragments and animations (from "Fragments and Animations") -->
+        <section>
+          <h2>Headline KPIs</h2>
+          <ul class="kpi-list">
+            <li class="fragment">
+              Net Interest Income:
+              <strong>₹ 7,850 Cr</strong> <small>(+10% YoY)</small>
+            </li>
+            <li class="fragment">
+              Net Profit:
+              <strong>₹ 3,250 Cr</strong> <small>(+12% YoY)</small>
+            </li>
+            <li class="fragment fade-up">
+              Return on Equity (ROE):
+              <strong>16.4%</strong>
+            </li>
+            <li class="fragment fade-up">
+              Cost-to-Income Ratio:
+              <strong>46.8%</strong>
+            </li>
+            <li class="fragment fade-up">
+              CET1 Capital Ratio:
+              <strong>14.3%</strong> (comfortably above regulatory minimum)
+            </li>
+          </ul>
 
-        <ul>
-          <li class="fragment fade-in kpi">
-            Net Income: <strong>₹ 3,250 Cr</strong> <span>(+12% YoY)</span>
-          </li>
-          <li class="fragment fade-in kpi">
-            Return on Equity (ROE): <strong>16.4%</strong>
-          </li>
-          <li class="fragment fade-in kpi">
-            Cost-to-Income Ratio: <strong>46.8%</strong>
-          </li>
-          <li class="fragment fade-in kpi">
-            CET1 Ratio: <strong>14.3%</strong> (well above regulatory minimum)
-          </li>
-        </ul>
+          <aside class="notes">
+            Walk through each KPI as it appears. Highlight profitability,
+            capital adequacy, and cost discipline. Tie these metrics back to
+            strategic initiatives and macro environment.
+          </aside>
+        </section>
 
-        <aside class="notes">
-          Walk through each KPI as it appears.
-          <br /><br />
-          Emphasize: (1) strong profitability, (2) disciplined cost management,
-          and (3) robust capital buffers that support growth and stress scenarios.
-        </aside>
-      </section>
+        <!-- Math equations (from "Math and Diagrams" methodology) -->
+        <section>
+          <h2>Financial Formulas</h2>
 
-      <!-- Financial math / formulas -->
-      <section>
-        <h2>Key Valuation Metrics</h2>
+          <p class="fragment">
+            **Net Present Value (NPV)** of future cash flows:
+            \[
+              \text{NPV}
+              = \sum_{t=1}^{T} \frac{CF_t}{(1 + r)^t}
+            \]
+          </p>
 
-        <p>We use standard discounted cash-flow techniques:</p>
+          <p class="fragment">
+            **Return on Equity (ROE):**
+            \[
+              \text{ROE}
+              = \frac{\text{Net Income}}{\text{Average Shareholders' Equity}}
+            \]
+          </p>
 
-        <p class="fragment">
-          Net Present Value (NPV):
-          <br />
-          \[
-            \text{NPV}
-            = \sum_{t=1}^{T} \frac{CF_t}{(1 + r)^t}
-          \]
-        </p>
+          <p class="fragment">
+            **Cost-to-Income Ratio:**
+            \[
+              \text{CTI}
+              = \frac{\text{Operating Expenses}}{\text{Operating Income}}
+            \]
+          </p>
 
-        <p class="fragment">
-          Economic Value Added (EVA):
-          <br />
-          \[
-            \text{EVA}
-            = \text{NOPAT} - (\text{WACC} \times \text{Capital Employed})
-          \]
-        </p>
+          <aside class="notes">
+            Explain how these equations are embedded into our analytics and
+            valuation models. Emphasize NPV for project evaluation, ROE for
+            shareholder returns, and CTI for efficiency.
+          </aside>
+        </section>
 
-        <p class="fragment">
-          Internal Rate of Return (IRR) solves:
-          <br />
-          \[
-            0 = \sum_{t=0}^{T} \frac{CF_t}{(1 + \text{IRR})^t}
-          \]
-        </p>
+        <!-- Code presentation with syntax highlighting (from "Code Presentation") -->
+        <section>
+          <h2>Code: NPV Scenario Analysis (Python)</h2>
+          <p>
+            <small>
+              Example of automating earnings and valuation scenarios for the
+              portfolio.
+            </small>
+          </p>
 
-        <aside class="notes">
-          Briefly recap each formula, linking to how we use them in our internal
-          valuation and project approval frameworks.
-          <br /><br />
-          Optionally, connect NPV and EVA to regulatory capital and risk-adjusted
-          performance metrics used by the bank.
-        </aside>
-      </section>
-
-      <!-- Code slide with syntax highlighting -->
-      <section>
-        <h2>Code Sample: NPV Sensitivity (Python)</h2>
-        <p><small>Automating portfolio-level valuation scenarios</small></p>
-
-        <!-- NOTE: 'hljs' + 'language-python' is important for syntax highlighting -->
-        <pre><code class="hljs language-python" data-trim>
+          <!-- Syntax highlighting: RevealHighlight plugin + language class -->
+          <pre>
+<code class="language-python" data-line-numbers="1-4|6-10|12-16">
 import numpy as np
 
 cash_flows = np.array([120, 150, 180, 220])  # in ₹ Cr
@@ -193,83 +197,90 @@ def npv(rate, cfs):
 
 for r in discount_rates:
     value = npv(r, cash_flows)
-    print(f"r = {r:.0%}  ->  NPV = ₹{value:,.2f} Cr")
-        </code></pre>
+    print(f"r = {r:.0%} -> NPV = ₹{value:,.2f} Cr")
+</code>
+          </pre>
 
-        <aside class="notes">
-          Explain that our risk and treasury teams can embed logic like this
-          in notebooks or services, and the results can be exported directly
-          into this presentation.
-          <br /><br />
-          Point out that syntax highlighting improves readability for
-          technical stakeholders.
-        </aside>
-      </section>
+          <aside class="notes">
+            Show how technical teams use Python to compute NPVs under different
+            discount rates. Connect this to risk, treasury, and strategy
+            workflows, and mention that results can be exported into the report
+            automatically.
+          </aside>
+        </section>
 
-      <!-- Slide showing more fragments and closing -->
-      <section data-transition="slide">
-        <h2>Next Steps</h2>
+        <!-- Closing slide with fragments and contact -->
+        <section>
+          <h2>Next Steps</h2>
+          <ul>
+            <li class="fragment">
+              Align FY projections with updated macro assumptions
+            </li>
+            <li class="fragment">
+              Prioritize growth initiatives by risk-adjusted NPV and ROE
+            </li>
+            <li class="fragment">
+              Continue automation of quarterly reporting via GitHub + CI/CD
+            </li>
+            <li class="fragment">
+              Deepen analytics on segment-level profitability and risk
+            </li>
+          </ul>
 
-        <ol>
-          <li class="fragment fade-in">
-            Align FY targets with updated macro assumptions
-          </li>
-          <li class="fragment fade-in">
-            Prioritize capex based on NPV / EVA ranking
-          </li>
-          <li class="fragment fade-in">
-            Tighten cost baseline in non-critical portfolios
-          </li>
-          <li class="fragment fade-in">
-            Continue automation of quarterly reporting via GitHub + CI/CD
-          </li>
-        </ol>
+          <p class="fragment">
+            <small>
+              For questions or follow-up:
+              <a href="mailto:25ds1000058@ds.study.iitm.ac.in">
+                25ds1000058@ds.study.iitm.ac.in
+              </a>
+            </small>
+          </p>
 
-        <p class="fragment">
-          <small>
-            Questions? Reach out at
-            <a href="mailto:25ds1000058@ds.study.iitm.ac.in">
-              25ds1000058@ds.study.iitm.ac.in
-            </a>
-          </small>
-        </p>
-
-        <aside class="notes">
-          Close by emphasizing the data pipeline and automation angle plus the
-          governance benefits of having version-controlled, reproducible
-          presentations.
-        </aside>
-      </section>
+          <aside class="notes">
+            Wrap up by emphasizing governance (version control via GitHub),
+            repeatability (scripts + data), and how this RevealJS deck fits into
+            your institution's digital reporting strategy.
+          </aside>
+        </section>
+      </div>
     </div>
-  </div>
 
-  <!-- Reveal.js core -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/reveal.min.js"></script>
+    <!-- RevealJS core JS (from tutorial: CDN, version 4.5.0) -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
 
-  <!-- Plugins -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/markdown/markdown.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/highlight/highlight.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/notes/notes.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/math/math.min.js"></script>
+    <!-- Plugins (from "Configuration" & "Presentation Modes" methodology) -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
 
-  <script>
-    // Initialize RevealJS
-    Reveal.initialize({
-      hash: true,           // Allow direct linking to slides
-      slideNumber: true,    // Show slide numbers
-      transition: 'slide',  // Slide transition style
+    <script>
+      // Configuration (mirroring tutorial style)
+      Reveal.initialize({
+        // Display
+        width: 1280,
+        height: 720,
+        margin: 0.04,
 
-      math: {
-        // Default KaTeX config is enough for standard LaTeX
-      },
+        // Navigation
+        controls: true,
+        progress: true,
+        history: true,
 
-      plugins: [
-        RevealMarkdown,
-        RevealHighlight,
-        RevealNotes,
-        RevealMath.KaTeX
-      ]
-    });
-  </script>
-</body>
+        // Presentation Features
+        autoSlide: 0,
+        transition: "slide",
+
+        // Math configuration (MathJax, as in "Math and Diagrams")
+        math: {
+          mathjax:
+            "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js",
+          config: "TeX-AMS_HTML",
+        },
+
+        // Plugins from the tutorial
+        plugins: [RevealMarkdown, RevealHighlight, RevealMath, RevealNotes],
+      });
+    </script>
+  </body>
 </html>
