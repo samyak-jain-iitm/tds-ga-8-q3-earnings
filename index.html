@@ -1,112 +1,281 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="utf-8" />
+    <title>Quarterly Earnings Report – Interactive RevealJS Deck</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-    <title>Quarterly Earnings Report</title>
+    <!-- RevealJS core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css"
+    />
+    <!-- Theme -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css"
+      id="theme"
+    />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css">
+    <!-- Syntax highlighting theme -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css"
+    />
+
+    <style>
+      /* Custom theme tweaks */
+      .reveal {
+        font-family: "Arial", sans-serif;
+      }
+
+      /* Responsive font sizing */
+      :root {
+        --r-main-font-size: calc(0.5vw + 0.5vh + 0.5vmin);
+      }
+
+      /* Simple chart styling */
+      .chart {
+        width: 100%;
+        height: calc(100vh - 200px);
+        margin: 20px auto;
+      }
+
+      .revenue-bar {
+        /* color is inherited from theme; keep it simple */
+      }
+    </style>
   </head>
+
   <body>
     <div class="reveal">
       <div class="slides">
-
+        <!-- Title / intro slide -->
         <section>
-          <h1>Q3 Earnings Report</h1>
-          <h3>Financial Performance Overview</h3>
+          <h1>Quarterly Earnings Report</h1>
+          <h3>Interactive Stakeholder Briefing</h3>
           <p>
-            <small>Presented by: Technical Consultant</small><br>
-            <small>Email: <a href="mailto:25ds1000058@ds.study.iitm.ac.in">25ds1000058@ds.study.iitm.ac.in</a></small>
+            Technical Consultant:
+            <strong>25ds1000058@ds.study.iitm.ac.in</strong>
           </p>
           <aside class="notes">
-            Welcome stakeholders. Today we will review the Q3 performance metrics.
+            Welcome everyone. This deck is built with RevealJS and hosted on
+            GitHub Pages to showcase a modern, web-native reporting workflow
+            for our quarterly earnings.
           </aside>
         </section>
 
+        <!-- Markdown slide (required) -->
         <section data-markdown>
           <textarea data-template>
-            ## Executive Summary
+## Quarterly Overview *(Markdown Slide)*
 
-            We have observed significant growth in key sectors this quarter.
+- **Revenue Growth:** +8.4% QoQ  
+- **Net Income:** Slight upside vs last quarter  
+- **Cost-to-Income Ratio:** Improved by 120 bps  
+- **Digital Transactions:** +22% YoY  
 
-            - **Revenue:** Up by 15% YOY
-            - **Operating Costs:** Decreased by 4%
-            - **Market Share:** Expanded in APAC region
+---
 
-            ---
-            
-            *Data reflects performance as of October 31st.*
+## Key Messages
+
+1. Core banking performance remains solid  
+2. Strong customer shift towards digital channels  
+3. Risk metrics remain well within our stated appetite  
+
+*Tip: use the arrow keys to navigate, and press **S** for speaker notes.*
           </textarea>
         </section>
 
+        <!-- Fragments and animated reveal of key points -->
         <section>
-          <h2>Financial Modeling</h2>
-          <p>To project our future earnings, we utilized the Compound Annual Growth Rate (CAGR) formula:</p>
-          
-          \[ CAGR = \left( \frac{EV}{BV} \right)^{\frac{1}{n}} - 1 \]
-
-          <p style="font-size: 0.6em; margin-top: 20px;">
-            Where <em>EV</em> is Ending Value, <em>BV</em> is Beginning Value, and <em>n</em> is number of years.
-          </p>
-        </section>
-
-        <section>
-          <h2>Sector Breakdown</h2>
-          <p>Contribution by department:</p>
+          <h2>Highlights at a Glance</h2>
           <ul>
-            <li class="fragment">Retail Banking: <span style="color:green">40%</span></li>
-            <li class="fragment">Investment Banking: <span style="color:green">35%</span></li>
-            <li class="fragment">Asset Management: <span style="color:green">25%</span></li>
-            <li class="fragment fade-up"><strong>Total Growth: Positive</strong></li>
+            <li class="fragment">
+              Retail banking revenue up <strong>10%</strong>
+            </li>
+            <li class="fragment">
+              Operating expenses contained within guidance
+            </li>
+            <li class="fragment fade-up">
+              Capital &amp; liquidity comfortably above regulatory minimums
+            </li>
           </ul>
+          <aside class="notes">
+            Walk through each point using fragments so stakeholders can focus on
+            one message at a time. Pause after each bullet to take questions or
+            provide more color.
+          </aside>
         </section>
 
+        <!-- Simple interactive visualization -->
         <section>
-          <h2>Automated Risk Analysis</h2>
-          <p>We implemented Python models to detect market volatility:</p>
-          <pre><code class="python" data-line-numbers="1-2|5-6|8">
+          <h2>Revenue Mix (Interactive Example)</h2>
+          <div class="chart" id="revenue-chart"></div>
+          <aside class="notes">
+            This slide demonstrates how we can embed interactive, client-side
+            visualizations directly in the deck. In production, the same
+            pattern can be used with live financial data.
+          </aside>
+        </section>
+
+        <!-- Code sample with syntax highlighting -->
+        <section>
+          <h2>Analytical Pipeline (Code Sample)</h2>
+          <pre><code class="language-python" data-line-numbers="1-4|6-9|11-14">
 import pandas as pd
-import numpy as np
 
-# Load quarterly financial data
-df = pd.read_csv('q3_earnings.csv')
-volatility = df['returns'].std() * np.sqrt(252)
+# Load quarterly earnings data
+df = pd.read_csv("quarterly_earnings.csv")
 
-print(f"Annualized Volatility: {volatility:.2%}")
+# Core performance ratios
+df["cost_income_ratio"] = df["operating_expenses"] / df["operating_income"]
+df["roe"] = df["net_income"] / df["equity"]
+
+# Focus on current quarter
+current_q = df.query("quarter == 'Q3-2025'")
+
+print(
+    current_q[["segment", "cost_income_ratio", "roe"]]
+        .sort_values("roe", ascending=False)
+)
           </code></pre>
           <aside class="notes">
-            This snippet demonstrates how we calculate annualized volatility using standard deviation on the daily returns.
+            Use this slide to explain that all key ratios in the report can be
+            reproduced from a transparent and version-controlled data pipeline,
+            reducing manual spreadsheet risk.
           </aside>
         </section>
 
+        <!-- Financial math / formulas with MathJax -->
         <section>
-          <h2>Q&A</h2>
-          <p>Thank you for your attention.</p>
-          <p class="fragment">Floor is open for questions.</p>
-          
+          <h2>Financial Metrics (Math-Enabled)</h2>
+
+          <p>Discounted Cash Flow (DCF) valuation of quarterly cash flows:</p>
+          <p>
+            \[
+            PV = \sum_{t=1}^{T} \frac{CF_t}{(1 + r)^t}
+            \]
+          </p>
+
+          <p>Return on Equity (RoE):</p>
+          <p>
+            \[
+            RoE = \frac{\text{Net Income}}{\text{Average Shareholders' Equity}}
+            \]
+          </p>
+
+          <p>Cost of Equity (CAPM):</p>
+          <p>
+            \[
+            k_e = r_f + \beta (r_m - r_f)
+            \]
+          </p>
+
           <aside class="notes">
-            - Remind stakeholders about the upcoming board meeting on the 15th.
-            - Hand out printed copies of the detailed ledger.
-            - Close the session.
+            Connect reported earnings to valuation and performance concepts:
+            DCF for intrinsic value, RoE for profitability, and CAPM for the
+            cost of equity. Emphasize how changes in these inputs impact the
+            bank's valuation.
           </aside>
         </section>
 
+        <!-- Closing slide with GitHub Pages mention -->
+        <section>
+          <h2>Access &amp; Next Steps</h2>
+          <ul>
+            <li class="fragment">
+              Deck is hosted on <strong>GitHub Pages</strong> for easy access
+              and version control.
+            </li>
+            <li class="fragment">
+              Supports speaker notes, overview mode, and keyboard shortcuts
+              (press <strong>?</strong> during the presentation).
+            </li>
+            <li class="fragment">
+              Can be extended with live APIs for real-time market and risk
+              data.
+            </li>
+          </ul>
+          <p class="fragment">
+            Contact:
+            <strong>25ds1000058@ds.study.iitm.ac.in</strong>
+          </p>
+          <aside class="notes">
+            Close by highlighting the advantages of this approach: automation,
+            reproducibility, and a consistent publishing pipeline via GitHub
+            Pages.
+          </aside>
+        </section>
       </div>
     </div>
 
+    <!-- RevealJS core script -->
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+
+    <!-- RevealJS plugins -->
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
 
     <script>
-      // Initialization as per context methodology
+      // Simple interactive chart example using plain SVG (no external libs)
+      function renderRevenueChart() {
+        const container = document.getElementById("revenue-chart");
+        if (!container || container.querySelector("svg")) return;
+
+        const segments = [
+          { name: "Retail", value: 45 },
+          { name: "Corporate", value: 30 },
+          { name: "Treasury", value: 15 },
+          { name: "Other", value: 10 },
+        ];
+
+        const width = container.clientWidth || 800;
+        const height = container.clientHeight || 400;
+        const max = Math.max(...segments.map((s) => s.value));
+        const barWidth = width / (segments.length * 1.5);
+
+        const svgNS = "http://www.w3.org/2000/svg";
+        const svg = document.createElementNS(svgNS, "svg");
+        svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
+
+        segments.forEach((seg, i) => {
+          const barHeight = (seg.value / max) * (height - 80);
+          const x = i * (barWidth * 1.5) + barWidth * 0.5;
+          const y = height - barHeight - 40;
+
+          const rect = document.createElementNS(svgNS, "rect");
+          rect.setAttribute("x", x);
+          rect.setAttribute("y", y);
+          rect.setAttribute("width", barWidth);
+          rect.setAttribute("height", barHeight);
+          rect.classList.add("revenue-bar");
+
+          const label = document.createElementNS(svgNS, "text");
+          label.setAttribute("x", x + barWidth / 2);
+          label.setAttribute("y", height - 15);
+          label.setAttribute("text-anchor", "middle");
+          label.textContent = seg.name;
+
+          const value = document.createElementNS(svgNS, "text");
+          value.setAttribute("x", x + barWidth / 2);
+          value.setAttribute("y", y - 5);
+          value.setAttribute("text-anchor", "middle");
+          value.textContent = seg.value + "%";
+
+          svg.appendChild(rect);
+          svg.appendChild(label);
+          svg.appendChild(value);
+        });
+
+        container.appendChild(svg);
+      }
+
+      // RevealJS configuration (following tutorial methodology)
       Reveal.initialize({
-        // Display configuration
+        // Display
         width: 1280,
         height: 720,
         margin: 0.04,
@@ -115,12 +284,27 @@ print(f"Annualized Volatility: {volatility:.2%}")
         controls: true,
         progress: true,
         history: true,
-        
-        // Presentation Features
-        transition: "slide", // none/fade/slide/convex/concave/zoom
 
-        // Plugins loaded
-        plugins: [ RevealMarkdown, RevealHighlight, RevealMath, RevealNotes ]
+        // Presentation features
+        autoSlide: 0,
+        transition: "slide",
+
+        // Plugins
+        plugins: [RevealMarkdown, RevealHighlight, RevealMath, RevealNotes],
+
+        // MathJax configuration
+        math: {
+          mathjax:
+            "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js",
+          config: "TeX-AMS_HTML-full",
+        },
+      });
+
+      // Render chart when its slide becomes active
+      Reveal.addEventListener("slidechanged", function (event) {
+        if (event.currentSlide && event.currentSlide.querySelector("#revenue-chart")) {
+          renderRevenueChart();
+        }
       });
     </script>
   </body>
