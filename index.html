@@ -1,323 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Q4 2024 Earnings Report</title>
-    
-    <!-- RevealJS CSS -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Quarterly Earnings Report</title>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css">
-    
-    <!-- Plugin CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css">
-    
-    <style>
-        .reveal {
-            font-family: 'Arial', sans-serif;
-        }
-        
-        .reveal h1, .reveal h2, .reveal h3 {
-            color: #1a365d;
-        }
-        
-        .chart-container {
-            height: 400px;
-            margin: 20px auto;
-            background: #f7fafc;
-            padding: 20px;
-            border-radius: 8px;
-        }
-        
-        .financial-metric {
-            background: #e6f3ff;
-            padding: 15px;
-            margin: 10px;
-            border-radius: 5px;
-            display: inline-block;
-        }
-        
-        .email-footer {
-            font-size: 0.8em;
-            color: #666;
-            margin-top: 30px;
-        }
-    </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="reveal">
-        <div class="slides">
+      <div class="slides">
+
+        <section>
+          <h1>Q3 Earnings Report</h1>
+          <h3>Financial Performance Overview</h3>
+          <p>
+            <small>Presented by: Technical Consultant</small><br>
+            <small>Email: <a href="mailto:25ds1000058@ds.study.iitm.ac.in">25ds1000058@ds.study.iitm.ac.in</a></small>
+          </p>
+          <aside class="notes">
+            Welcome stakeholders. Today we will review the Q3 performance metrics.
+          </aside>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            ## Executive Summary
+
+            We have observed significant growth in key sectors this quarter.
+
+            - **Revenue:** Up by 15% YOY
+            - **Operating Costs:** Decreased by 4%
+            - **Market Share:** Expanded in APAC region
+
+            ---
             
-            <!-- Title Slide -->
-            <section>
-                <h1>Q4 2024 Earnings Report</h1>
-                <h3>Financial Performance & Strategic Insights</h3>
-                <p style="margin-top: 50px;">
-                    <small>Prepared by Technical Consulting Team</small><br>
-                    <small class="email-footer">Contact: 25ds1000058@ds.study.iitm.ac.in</small>
-                </p>
-                <aside class="notes">
-                    Welcome everyone to our Q4 2024 earnings presentation. Today we'll cover our financial performance, key metrics, and strategic outlook. The presentation is interactive, so feel free to explore the data visualizations.
-                </aside>
-            </section>
+            *Data reflects performance as of October 31st.*
+          </textarea>
+        </section>
 
-            <!-- Executive Summary with Markdown -->
-            <section data-markdown>
-                <textarea data-template>
-                    ## Executive Summary
+        <section>
+          <h2>Financial Modeling</h2>
+          <p>To project our future earnings, we utilized the Compound Annual Growth Rate (CAGR) formula:</p>
+          
+          \[ CAGR = \left( \frac{EV}{BV} \right)^{\frac{1}{n}} - 1 \]
 
-                    Our Q4 2024 performance demonstrates strong growth across all business units:
+          <p style="font-size: 0.6em; margin-top: 20px;">
+            Where <em>EV</em> is Ending Value, <em>BV</em> is Beginning Value, and <em>n</em> is number of years.
+          </p>
+        </section>
 
-                    - **Revenue Growth**: 23% YoY increase
-                    - **Operating Margin**: Improved to 18.5%
-                    - **Customer Acquisition**: 2.3M new accounts
-                    - **Digital Transformation**: 85% adoption rate
-                    - **Risk Management**: Enhanced compliance framework
+        <section>
+          <h2>Sector Breakdown</h2>
+          <p>Contribution by department:</p>
+          <ul>
+            <li class="fragment">Retail Banking: <span style="color:green">40%</span></li>
+            <li class="fragment">Investment Banking: <span style="color:green">35%</span></li>
+            <li class="fragment">Asset Management: <span style="color:green">25%</span></li>
+            <li class="fragment fade-up"><strong>Total Growth: Positive</strong></li>
+          </ul>
+        </section>
 
-                    ---
-
-                    ### Strategic Priorities
-
-                    1. **Market Expansion** - Entering 3 new geographic markets
-                    2. **Technology Investment** - $500M in AI and automation
-                    3. **Sustainability** - Carbon-neutral operations by 2026
-                </textarea>
-                <aside class="notes">
-                    The executive summary shows our strongest quarter yet. Pay special attention to the digital transformation metrics - this is a key differentiator. When discussing strategic priorities, emphasize the technology investment as it directly impacts our competitive position.
-                </aside>
-            </section>
-
-            <!-- Financial Metrics with Fragments -->
-            <section>
-                <h2>Key Financial Metrics</h2>
-                <div>
-                    <div class="financial-metric fragment fade-up">
-                        <h3>$4.2B</h3>
-                        <p>Total Revenue</p>
-                    </div>
-                    <div class="financial-metric fragment fade-up">
-                        <h3>$775M</h3>
-                        <p>Operating Income</p>
-                    </div>
-                    <div class="financial-metric fragment fade-up">
-                        <h3>$2.15</h3>
-                        <p>Earnings Per Share</p>
-                    </div>
-                </div>
-                <p class="fragment" style="margin-top: 40px; font-size: 0.9em; color: #2c5282;">
-                    All metrics exceed analyst expectations and represent record quarterly performance
-                </p>
-                <aside class="notes">
-                    Reveal each metric progressively. Pause after each one to let stakeholders absorb the numbers. Highlight that we beat analyst expectations by 12% on EPS. The revenue figure represents 23% growth YoY.
-                </aside>
-            </section>
-
-            <!-- Revenue Analysis with Code -->
-            <section>
-                <h2>Revenue Analysis Algorithm</h2>
-                <p>Our data science team uses this Python model for forecasting:</p>
-                <pre><code class="python" data-line-numbers="1-2|4-6|8-10|12-14">
+        <section>
+          <h2>Automated Risk Analysis</h2>
+          <p>We implemented Python models to detect market volatility:</p>
+          <pre><code class="python" data-line-numbers="1-2|5-6|8">
 import pandas as pd
 import numpy as np
-from sklearn.ensemble import RandomForestRegressor
 
-# Load historical revenue data
-revenue_data = pd.read_csv('quarterly_revenue.csv')
-features = revenue_data[['market_index', 'customer_count', 'avg_transaction']]
+# Load quarterly financial data
+df = pd.read_csv('q3_earnings.csv')
+volatility = df['returns'].std() * np.sqrt(252)
 
-# Train predictive model
-model = RandomForestRegressor(n_estimators=100, random_state=42)
-model.fit(features, revenue_data['revenue'])
+print(f"Annualized Volatility: {volatility:.2%}")
+          </code></pre>
+          <aside class="notes">
+            This snippet demonstrates how we calculate annualized volatility using standard deviation on the daily returns.
+          </aside>
+        </section>
 
-# Generate Q1 2025 forecast
-q1_forecast = model.predict(new_market_conditions)
-print(f"Predicted Q1 Revenue: ${q1_forecast[0]/1e9:.2f}B")
-                </code></pre>
-                <aside class="notes">
-                    Walk through the code step by step. Line 1-2: imports. Lines 4-6: data loading. Lines 8-10: model training using Random Forest. Lines 12-14: forecasting. This model has 94% accuracy and predicts continued growth in Q1 2025.
-                </aside>
-            </section>
+        <section>
+          <h2>Q&A</h2>
+          <p>Thank you for your attention.</p>
+          <p class="fragment">Floor is open for questions.</p>
+          
+          <aside class="notes">
+            - Remind stakeholders about the upcoming board meeting on the 15th.
+            - Hand out printed copies of the detailed ledger.
+            - Close the session.
+          </aside>
+        </section>
 
-            <!-- Financial Formulas with Math -->
-            <section>
-                <h2>Return on Equity Calculation</h2>
-                <p>Our ROE demonstrates efficient capital utilization:</p>
-                <div style="margin: 40px 0;">
-                    \[ROE = \frac{\text{Net Income}}{\text{Shareholder Equity}} = \frac{625M}{3.2B} = 19.5\%\]
-                </div>
-                <div class="fragment" style="margin-top: 40px;">
-                    <h3>DuPont Analysis</h3>
-                    \[ROE = \frac{\text{Net Income}}{\text{Revenue}} \times \frac{\text{Revenue}}{\text{Assets}} \times \frac{\text{Assets}}{\text{Equity}}\]
-                    <p style="margin-top: 20px;">
-                        \[= 14.9\% \times 0.87 \times 1.5 = 19.5\%\]
-                    </p>
-                </div>
-                <aside class="notes">
-                    Our 19.5% ROE is above industry average of 15%. The DuPont breakdown shows this is driven by strong profit margins (14.9%) and efficient asset utilization (0.87 turnover), with moderate leverage (1.5x). This is a healthy balance.
-                </aside>
-            </section>
-
-            <!-- Risk Metrics -->
-            <section>
-                <h2>Risk-Adjusted Performance</h2>
-                <p>Sharpe Ratio measures risk-adjusted returns:</p>
-                <div style="margin: 40px 0;">
-                    \[S = \frac{R_p - R_f}{\sigma_p}\]
-                </div>
-                <p class="fragment">Where:</p>
-                <ul class="fragment">
-                    <li>\(R_p\) = Portfolio return (19.5%)</li>
-                    <li>\(R_f\) = Risk-free rate (4.5%)</li>
-                    <li>\(\sigma_p\) = Standard deviation (8.2%)</li>
-                </ul>
-                <div class="fragment" style="margin-top: 30px; padding: 20px; background: #e6f3ff; border-radius: 8px;">
-                    \[S = \frac{0.195 - 0.045}{0.082} = 1.83\]
-                    <p style="margin-top: 15px;"><strong>Interpretation:</strong> Sharpe ratio of 1.83 indicates excellent risk-adjusted returns</p>
-                </div>
-                <aside class="notes">
-                    The Sharpe ratio of 1.83 is exceptional - anything above 1.0 is considered good, above 2.0 is very good. This shows we're generating strong returns without taking excessive risk. Compare this to our peer group average of 1.2.
-                </aside>
-            </section>
-
-            <!-- SQL Query for Data Analysis -->
-            <section>
-                <h2>Customer Segmentation Query</h2>
-                <p>Database query used for customer analysis:</p>
-                <pre><code class="sql" data-line-numbers="1-3|5-8|10-12">
--- Identify high-value customer segments
-SELECT 
-    customer_segment,
-    COUNT(*) as customer_count,
-    AVG(account_balance) as avg_balance,
-    SUM(quarterly_revenue) as total_revenue,
-    AVG(transaction_frequency) as avg_transactions
-FROM customer_analytics
-WHERE quarter = 'Q4_2024'
-GROUP BY customer_segment
-HAVING total_revenue > 1000000
-ORDER BY total_revenue DESC;
-                </code></pre>
-                <p class="fragment" style="margin-top: 30px; font-size: 0.9em;">
-                    This analysis identified our top 3 segments contributing 68% of total revenue
-                </p>
-                <aside class="notes">
-                    This SQL query is crucial for our segmentation strategy. Lines 1-3: select key metrics. Lines 5-8: calculate aggregates per segment. Lines 10-12: filter and sort by revenue. Results show premium and corporate segments drive majority of revenue.
-                </aside>
-            </section>
-
-            <!-- Market Outlook with Animated List -->
-            <section>
-                <h2>Q1 2025 Outlook</h2>
-                <ul>
-                    <li class="fragment fade-right">Revenue guidance: $4.5B - $4.7B (+7-12% QoQ)</li>
-                    <li class="fragment fade-right">Operating margin target: 19-20%</li>
-                    <li class="fragment fade-right">New product launches in digital banking</li>
-                    <li class="fragment fade-right">Strategic partnerships with 3 fintech firms</li>
-                    <li class="fragment fade-right">Continued investment in AI/ML capabilities</li>
-                </ul>
-                <div class="fragment" style="margin-top: 40px; padding: 20px; background: #f0fdf4; border-radius: 8px;">
-                    <strong>Confidence Level:</strong> High - Based on strong pipeline and macro indicators
-                </div>
-                <aside class="notes">
-                    Our Q1 outlook is conservative but achievable. The 7-12% QoQ growth accounts for seasonal patterns. New product launches are scheduled for February. Fintech partnerships will expand our digital ecosystem. AI investments focus on fraud detection and personalization.
-                </aside>
-            </section>
-
-            <!-- JavaScript Code Example -->
-            <section>
-                <h2>Real-Time Dashboard Integration</h2>
-                <p>Client-side code for live metric updates:</p>
-                <pre><code class="javascript" data-line-numbers="1-4|6-11|13-18">
-// WebSocket connection to trading systems
-const ws = new WebSocket('wss://api.example.com/metrics');
-
-ws.onmessage = function(event) {
-    const metrics = JSON.parse(event.data);
-    
-    // Update dashboard in real-time
-    updateMetric('revenue', metrics.daily_revenue);
-    updateMetric('transactions', metrics.transaction_count);
-    updateMetric('risk-score', calculateRisk(metrics));
-    
-    // Trigger alerts if thresholds exceeded
-    if (metrics.risk_score > 0.75) {
-        notifyRiskTeam(metrics);
-        updateDashboardStatus('warning');
-    }
-};
-                </code></pre>
-                <aside class="notes">
-                    This JavaScript powers our real-time executive dashboard. Lines 1-4: establish WebSocket connection. Lines 6-11: update metrics as data arrives. Lines 13-18: automated risk monitoring and alerts. System processes over 10,000 updates per second.
-                </aside>
-            </section>
-
-            <!-- Closing Slide -->
-            <section>
-                <h2>Thank You</h2>
-                <h3>Questions & Discussion</h3>
-                <div style="margin-top: 60px;">
-                    <p><strong>Contact Information:</strong></p>
-                    <p>Technical Consulting Team</p>
-                    <p>Email: <a href="mailto:25ds1000058@ds.study.iitm.ac.in">25ds1000058@ds.study.iitm.ac.in</a></p>
-                </div>
-                <p style="margin-top: 60px; font-size: 0.8em; color: #666;">
-                    Press 'S' for speaker notes | 'F' for fullscreen | 'O' for overview
-                </p>
-                <aside class="notes">
-                    Thank you for attending. Key takeaways: Record Q4 performance, strong outlook for Q1, continued digital transformation investment. Open the floor for questions. Be prepared to discuss regulatory environment, competitive landscape, and M&A strategy.
-                </aside>
-            </section>
-
-        </div>
+      </div>
     </div>
 
-    <!-- RevealJS Core -->
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
-    
-    <!-- Plugins -->
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
 
-    <!-- Initialize RevealJS -->
     <script>
-        Reveal.initialize({
-            // Display settings
-            width: 1280,
-            height: 720,
-            margin: 0.04,
-            
-            // Navigation
-            controls: true,
-            progress: true,
-            history: true,
-            center: true,
-            
-            // Transitions
-            transition: 'slide',
-            transitionSpeed: 'default',
-            
-            // Plugins
-            plugins: [
-                RevealMarkdown,
-                RevealHighlight,
-                RevealNotes,
-                RevealMath.KaTeX
-            ],
-            
-            // Math plugin configuration
-            math: {
-                mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
-                config: 'TeX-AMS_HTML-full',
-                TeX: {
-                    Macros: {
-                        R: '\\mathbb{R}',
-                        set: ['\\left\\{#1 \\; ; \\; #2\\right\\}', 2]
-                    }
-                }
-            }
-        });
+      // Initialization as per context methodology
+      Reveal.initialize({
+        // Display configuration
+        width: 1280,
+        height: 720,
+        margin: 0.04,
+
+        // Navigation
+        controls: true,
+        progress: true,
+        history: true,
+        
+        // Presentation Features
+        transition: "slide", // none/fade/slide/convex/concave/zoom
+
+        // Plugins loaded
+        plugins: [ RevealMarkdown, RevealHighlight, RevealMath, RevealNotes ]
+      });
     </script>
-</body>
+  </body>
 </html>
